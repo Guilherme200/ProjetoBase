@@ -1,0 +1,20 @@
+@import "custom/border";
+@import "custom/form";
+
+/* Fix navbar and sidebar */
+#wrapper {
+    position: fixed;
+    overflow: hidden;
+    top: 0; right: 0; bottom: 0; left: 0;
+}
+
+nav.navbar {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0px;
+    z-index: 99;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}

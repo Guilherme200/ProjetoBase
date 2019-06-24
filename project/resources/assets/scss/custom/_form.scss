@@ -1,0 +1,27 @@
+form.form-custom {
+
+  .custom-checkbox.small {
+    label {
+      line-height: 1.5rem;
+    }
+  }
+
+  .form-control-custom {
+    font-size: 0.8rem;
+    border-radius: 10rem;
+    padding: 1.5rem 1rem;
+  }
+
+  .btn-custom {
+    font-size: 0.8rem;
+    border-radius: 10rem;
+    padding: 0.75rem 1rem;
+  }
+
+  select.form-control-custom {
+    font-size: 0.8rem;
+    border-radius: 10rem;
+    padding: 0 1rem;
+    height: 3.1rem;
+  }
+}
