@@ -5,14 +5,11 @@
 -   `docker-compose`
 
 ### Instalação
-```sh
-git clone git@bitbucket.org:letsgrow/zapet.git
-cd zapet/
+--Raiz do projeto rodar comando
 make setup
-```
 
 ### Acessando a área administrativa
 Para acessar basta abrir o navegador em `http://localhost` com o acesso abaixo:
 
-* email: admin@letsgrow.com.br
+* email: admin@example.com.br
 * senha: 123456

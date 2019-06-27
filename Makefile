@@ -56,7 +56,7 @@ setup:
 
 	@echo "$(COLOR_COMMENT)App: $(COLOR_RESET)http://localhost"
 	@echo "$(COLOR_COMMENT)Mailhog: $(COLOR_RESET)http://localhost:8025"
-	@echo "$(COLOR_COMMENT)Pgadmin: $(COLOR_RESET)http://localhost:5001 (Host: postgres | User: postgres | Password: rapadura)"
+	@echo "$(COLOR_COMMENT)Pgadmin: $(COLOR_RESET)http://localhost:5001"
 
 ## Clear all application data and components
 clean:

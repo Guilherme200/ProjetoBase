@@ -11,12 +11,12 @@ class UsersTableSeeder extends Seeder
     public function run()
     {
         $user = User::firstOrNew([
-            'email' => 'admin@letsgrow.com.br',
+            'email' => 'admin@example.com.br',
         ]);
 
         $user->fill([
-            'name' => 'Administrador Letsgrow',
-            'email' => 'admin@letsgrow.com.br',
+            'name' => 'Administrador',
+            'email' => 'admin@example.com.br',
             'password' => \Hash::make('123456'),
             'email_verified_at' => now(),
         ]);

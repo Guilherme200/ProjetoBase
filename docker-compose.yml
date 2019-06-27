@@ -8,7 +8,7 @@ volumes:
 services:
    # PHP 7.3 (with Nginx)
   app:
-    container_name: app
+    container_name: admin-app
     build: ./devops/environments/development/dockerfiles/app
     volumes:
       - ./project:/var/www/app
@@ -21,7 +21,7 @@ services:
 
   # Front NodeJS
   front:
-    container_name: front
+    container_name: admin-front
     build: ./devops/environments/development/dockerfiles/front
     tty: true
     volumes:
@@ -31,7 +31,7 @@ services:
 
   # Database - Postgres (11)
   postgres:
-    container_name: postgres
+    container_name: admin-postgres
     image: postgres:11.3-alpine
     restart: always
     volumes:
@@ -45,7 +45,7 @@ services:
 
   # PgAdmin4
   pgadmin:
-    container_name: pgadmin
+    container_name: admin-pgadmin
     image: dpage/pgadmin4
     environment:
       - PGADMIN_DEFAULT_EMAIL=admin@example.com.br
@@ -59,7 +59,7 @@ services:
 
   # MailHog - Fake SMTP server.
   mailhog:
-    container_name: mailhog
+    container_name: admin-mailhog
     image: mailhog/mailhog:latest
     ports:
       - '1025:1025'  # Port 1025 => SMTP.
@@ -68,7 +68,7 @@ services:
   # Queue Worker
   queue:
     image: ambientum/php:7.3
-    container_name: queue
+    container_name: admin-queue
     volumes:
       - ./project:/var/www/app
     command: php artisan horizon
@@ -79,7 +79,7 @@ services:
 
   # Redis cache
   redis:
-    container_name: redis
+    container_name: admin-redis
     image: redis:5.0-alpine
     restart: always
     volumes:
