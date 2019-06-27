@@ -1,5 +1,3 @@
-# Zapet :dog:
-
 ### Requisitos
 -   `docker`
 -   `docker-compose`
