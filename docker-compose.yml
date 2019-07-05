@@ -48,10 +48,13 @@ services:
     container_name: admin-phpmyadmin
     image: phpmyadmin/phpmyadmin
     restart: always
-    ports:
-      - 5001:80
     volumes:
       - myadmin-data:/var/lib/phpmyadmin
+    ports:
+      - 5001:80
+    environment:
+      - PMA_HOST=mysql
+      - MYSQL_ROOT_PASSWORD=123456
     depends_on:
       - mysql
 
