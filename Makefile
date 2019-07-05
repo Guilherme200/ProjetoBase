@@ -76,8 +76,8 @@ upgrade_dev:
 	@$(DC) exec app php artisan upgrade --dev
 
 remove_volumes:
-	@docker volume rm admin_postgres-data
-	@docker volume rm admin_pgadmin-data
+	@docker volume rm admin_mysql-data
+	@docker volume rm admin_myadmin-data
 	@docker volume rm admin_redis-data
 
 ## Initialize docker containers
